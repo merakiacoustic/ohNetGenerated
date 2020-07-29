@@ -279,7 +279,7 @@ endif
 cflags = $(cflags_base) -Werror
 depsPlatform = ${openhome_system}-${openhome_architecture}
 header_install = Build/Include
-inc_build = dependencies/$(depsPlatform)/ohNet-$(depsPlatform)-Release/include/ohnet
+inc_build = dependencies/$(depsPlatform)/ohNet-$(depsPlatform)-$(openhome_configuration)/include/ohnet
 includes = -I$(inc_build)/ $(version_specific_includes)
 bundle_build = Build/Bundles
 osdir ?= Posix
